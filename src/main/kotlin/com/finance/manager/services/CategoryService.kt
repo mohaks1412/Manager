@@ -28,7 +28,7 @@ class CategoryService(
                 CategoryResponse(
                     name = it.name,
                     type = it.type.name,
-                    isCustom = !it.isDefault
+                    custom = !it.isDefault
                 )
             }
         )
@@ -53,7 +53,7 @@ class CategoryService(
         return CategoryResponse(
             name = category.name,
             type = category.type.name,
-            isCustom = true
+            custom = true
         )
     }
 
